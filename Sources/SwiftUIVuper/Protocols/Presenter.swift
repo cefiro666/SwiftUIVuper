@@ -9,14 +9,14 @@
 import SwiftUI
 
 // MARK: - Presenter
-protocol Presenter: ObservableObject {
+open protocol Presenter: ObservableObject {
     
-    var container: Container? { get set }
+    open var container: Container? { get set }
     
-    func onClickError()
+    open func onClickError()
 }
 
-extension Presenter {
+open extension Presenter {
     
-    func onClickError() {}
+    open func onClickError() {}
 }

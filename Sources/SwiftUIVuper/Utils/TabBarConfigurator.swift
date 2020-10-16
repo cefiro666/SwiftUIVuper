@@ -9,9 +9,9 @@
 import UIKit
 
 // MARK: - TabBarConfigurator
-class TabBarConfigurator {
+open class TabBarConfigurator {
     
-    static public func getTabBarFromTabBarItemType<Item: TabBarItem & CaseIterable>(
+    open static public func getTabBarFromTabBarItemType<Item: TabBarItem & CaseIterable>(
         _ tabType: Item.Type,
         creatingControllersCompletion: (([UIViewController]) -> ())? = nil
     ) -> UITabBarController {

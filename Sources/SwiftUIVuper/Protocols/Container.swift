@@ -9,8 +9,8 @@
 import Foundation
 
 // MARK: - Container
-protocol Container: class {
+open protocol Container: class {
     
-    func showErrorMessage(_ message: String?)
-    func setLoadingVisible(_ visible: Bool)
+    open func showErrorMessage(_ message: String?)
+    open func setLoadingVisible(_ visible: Bool)
 }
