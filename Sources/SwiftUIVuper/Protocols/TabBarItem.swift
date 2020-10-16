@@ -9,11 +9,11 @@
 import UIKit
 
 // MARK: - TabBarItem
-open protocol TabBarItem: CaseIterable {
+public protocol TabBarItem: CaseIterable {
     
-    open var title: String { get }
-    open var image: UIImage? { get }
-    open var selectedImage: UIImage? { get }
-    open var controller: UIViewController? { get }
-    open var tabIndex: Int { get }
+    var title: String { get }
+    var image: UIImage? { get }
+    var selectedImage: UIImage? { get }
+    var controller: UIViewController? { get }
+    var tabIndex: Int { get }
 }

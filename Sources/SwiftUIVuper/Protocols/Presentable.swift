@@ -9,8 +9,8 @@
 import Foundation
 
 // MARK: - Presentable
-open protocol Presentable {
-    open associatedtype PresenterType: Presenter
+public protocol Presentable {
+    associatedtype PresenterType: Presenter
     
-    open var presenter: PresenterType { get }
+    var presenter: PresenterType { get }
 }

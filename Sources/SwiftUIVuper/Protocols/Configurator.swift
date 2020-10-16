@@ -10,8 +10,8 @@ import SwiftUI
 import UIKit
 
 // MARK: - Configurator
-open protocol Configurator {
-    open associatedtype Content: Contentable
+public protocol Configurator {
+    associatedtype Content: Contentable
     
-    open static func createScreen(configureBlock: ((Content?) -> ())?) -> UIViewController
+    static func createScreen(configureBlock: ((Content?) -> ())?) -> UIViewController
 }

@@ -9,8 +9,8 @@
 import Foundation
 
 // MARK: - Configurable
-open protocol Configurable {
-    open associatedtype ConfiguratorType: Configurator
+public protocol Configurable {
+    associatedtype ConfiguratorType: Configurator
     
-    open static var configurator: ConfiguratorType.Type { get }
+    static var configurator: ConfiguratorType.Type { get }
 }
